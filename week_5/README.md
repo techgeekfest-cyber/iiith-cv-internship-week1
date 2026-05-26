@@ -1,0 +1,6 @@
+- Extracted frames from video using ffmpeg
+- Created train and validation datasets
+- Used Label Studio for annotation
+- Resized images using ffmpeg
+- Trained YOLOv8 model using ultralytics
+- Generated trained weights (best.pt)
