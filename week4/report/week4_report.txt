@@ -1,0 +1,35 @@
+YOLO Dataset Configuration Files Report
+
+This task explored the configuration and metadata files used in YOLO datasets.
+
+The coco8.yaml file contains important dataset information such as:
+- Path to dataset
+- Training image directory
+- Validation image directory
+- Class names
+
+Example:
+train: images/train
+val: images/val
+
+The names section defines object classes such as:
+person, bicycle, car, dog, horse, etc.
+
+The labels/train folder contains annotation text files. Each label file corresponds to one image. The format followed is:
+
+<class_id> <x_center> <y_center> <width> <height>
+
+All coordinates are normalized between 0 and 1.
+
+The dataset structure usually contains:
+- images/train
+- images/val
+- labels/train
+- labels/val
+
+These configuration files help YOLO understand dataset organization, object classes, and annotation details during training and validation.
+
+References:
+1. https://docs.ultralytics.com/datasets/
+2. https://docs.ultralytics.com
+3. YOLOv8 Dataset Documentation
